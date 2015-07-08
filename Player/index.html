@@ -1,0 +1,95 @@
+<! DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>My web page</title>
+		<link rel = "stylesheet" type = "text/css" href = "player.css">
+		<script type="text/javascript" src="player.js"></script>
+	</head>
+	
+	<body>
+		
+		<!--HEADING ONE-->
+		<h1> Tutorial</h1>
+		<p>Hey, there. Find the <strong>bold</strong> word in this sentence.</p>
+		<p>Also, make sure to check out something <em>italic</em>.</p>
+		</hr>
+		<hr/> <!--frame line-->
+		<!--THIS IS HOW COMMENTS LOOK LIKE-->
+		<p>I am in the body!</p>
+		<!-- THIS IS AN UNORDERED LIST-->
+		<ul>
+		<li>list one</li>
+		<li>list two</li>
+		<li>list three</li>
+		</ul>
+		
+		<!-- THIS IS AN ORDERED LIST-->
+		<ol>
+		<li>three</li>
+		<li>four</li>
+		<li>five</li>
+		</ol>
+		
+		<!-- Hyper-link-->
+		<p><a href="http://www.google.com">Google</a></p>
+		
+		<!-- ADD AUDIO -->
+		<div id="structure">	
+			<div id = "player">
+			
+				<audio id="audio">
+					<source  src="music/One Direction-Steal My Girl.mp3" type="audio/mp3">
+					Sorry, your browser does not support HTML5 audio.
+				</audio>
+
+				<div id = "video-container">
+					<div id="screen" class="frame">
+						<img id="screen-button" src="pics/play.png">
+					</div>
+					<video id = "video">
+						<source src = "video/Taylor Swift - Style.mp4" type="video/mp4">
+						Your browser does not support this video!
+					</video>
+				</div>
+				
+				<div id = "pbar-container">
+					<div id = "pbar"></div>
+				</div>
+
+				<div id = "elements-container">
+					<img id = "play-pre" src = "pics/previous.png">
+					<img id = "play-reverse" src = "pics/reverse.png">
+					<img id = "play-button" src = "pics/play.png">
+					<img id = "play-speed" src = "pics/speed.png">
+					<img id = "play-next" src = "pics/next.png">
+					<img id = "sound-button" src = "pics/sound.png">
+					<div id = "sbar-container"> 
+						<div id = "sbar"></div>
+					</div>
+					<div id = "time-field">
+						0:00 / 0:00
+					</div>
+					<img id = "full-screen" src = "pics/fullscreen.png">
+				</div>
+				
+			</div>
+
+			<div id="play-list">
+				<h2>Play list</h2>
+				<ul>
+				<li>
+				<span class='play-item' onclick='load("video/THINKING OUT LOUD - Ed Sheeran - Taryn Southern Music Video Cover.mp4");'>Thinking out loud</span>
+				</li>
+				<li>
+				<span class='play-item' onclick='load("video/Taylor Swift - Style.mp4");'>Style</span>
+				</li>
+				</ul>
+			</div>
+		</div>	
+		<!-- ADD IMAGE -->
+		<p><img src="pics/1.jpg" alt="dog image"></p>
+
+	</body>
+</html>
